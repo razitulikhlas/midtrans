@@ -35,9 +35,9 @@
          CURLOPT_HEADER =>0,
          //Tambahkan header ke permintaan,termasuk otorisasi yang di hasilkan dari kunci server
          CURLOPT_HTTPHEADER => array(
-             'Content-Type:application/json',
-             'Accept: application/json',
-             'Authorization: Basic' . base64_encode($server_key.':')
+            'Content-Type: application/json',
+            'Accept: application/json',
+            'Authorization: Basic ' . base64_encode($server_key . ':')
          ),
          CURLOPT_POSTFIELDS => $request_body
         );
